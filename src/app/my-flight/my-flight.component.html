@@ -1,0 +1,19 @@
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Flight Number</th>
+      <th scope="col">Origin</th>
+      <th scope="col">Destination</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let fl of flights; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>  {{fl.flightNumber}}    </td>
+      <td>{{ fl.origin}}</td>
+      <td>{{ fl.destination }}</td>
+    </tr>
+    </tbody>
+  </table>
